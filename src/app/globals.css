@@ -1,0 +1,244 @@
+/* Updated: 2025-09-27T15:06:12.525Z */
+/* Updated: 2025-09-25T01:33:33.823Z */
+/* Updated: 2025-09-25T01:33:29.764Z */
+/* Updated: 2025-09-25T01:17:37.957Z */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;550;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Shadcn/UI colors */
+  --color-background: #FFFFFF;
+  --color-foreground: #0A0A0A;
+
+  --color-card: #FFFFFF;
+  --color-card-foreground: #0A0A0A;
+
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #0A0A0A;
+
+  --color-primary: #2563EB; /* Primary Blue */
+  --color-primary-foreground: #FAFAFA;
+
+  --color-secondary: #F8FAFC; /* Light Gray */
+  --color-secondary-foreground: #334155; /* Dark Gray */
+
+  --color-muted: #F8FAFC; /* Light Gray */
+  --color-muted-foreground: #64748B; /* Medium Gray */
+
+  --color-accent: #EBF4FF; /* Light Blue Background */
+  --color-accent-foreground: #2563EB; /* Primary Blue */
+
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FAFAFA;
+
+  --color-border: #E2E8F0; /* Border Gray */
+  --color-input: #E2E8F0; /* Border Gray */
+  --color-ring: #2563EB; /* Primary Blue */
+
+  --color-chart-1: #2563EB; /* Primary Blue */
+  --color-chart-2: #10B981; /* Success Green */
+  --color-chart-3: #8B5CF6; /* R color */
+  --color-chart-4: #F59E0B; /* Apache Spark */
+  --color-chart-5: #EF4444; /* Matplotlib */
+
+  --color-sidebar: #F7F7F7;
+  --color-sidebar-foreground: #404040;
+  --color-sidebar-primary: #1A1A1A;
+  --color-sidebar-primary-foreground: #FAFAFA;
+  --color-sidebar-accent: #F0F0F0;
+  --color-sidebar-accent-foreground: #1A1A1A;
+  --color-sidebar-border: #D4D4D8;
+  --color-sidebar-ring: #3B82F6;
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  /* Additional design system colors */
+  --color-primary-blue: #2563EB;
+  --color-light-blue: #3B82F6;
+  --color-success-green: #10B981;
+  --color-background-white: #FFFFFF;
+  --color-light-gray: #F8FAFC;
+  --color-medium-gray: #64748B;
+  --color-dark-gray: #334155;
+  --color-light-blue-background: #EBF4FF;
+  --color-border-gray: #E2E8F0;
+  --color-heading: #1E293B;
+  --color-skill-label: #374151;
+  --color-percentage: #1E293B;
+  --color-gradient-purple: #4F46E5;
+  --color-gradient-blue: #7C3AED;
+
+  /* Skill bar colors */
+  --color-skill-python: #3B82F6;
+  --color-skill-sql: #10B981;
+  --color-skill-r: #8B5CF6;
+  --color-skill-javascript: #A855F7;
+  --color-skill-java: #EF4444;
+  --color-skill-scala: #6366F1;
+  --color-skill-apache-spark: #F59E0B;
+  --color-skill-apache-kafka: #3B82F6;
+  --color-skill-apache-airflow: #10B981;
+  --color-skill-hadoop: #6366F1;
+  --color-skill-etl-elt: #10B981;
+  --color-skill-data-warehousing: #3B82F6;
+  --color-skill-tensorflow: #EF4444;
+  --color-skill-pytorch: #F59E0B;
+  --color-skill-scikit-learn: #10B981;
+  --color-skill-openai-api: #3B82F6;
+  --color-skill-nlp: #8B5CF6;
+  --color-skill-computer-vision: #EF4444;
+  --color-skill-tableau: #3B82F6;
+  --color-skill-power-bi: #F59E0B;
+  --color-skill-plotly: #10B981;
+  --color-skill-d3js: #6366F1;
+  --color-skill-matplotlib: #EF4444;
+  --color-skill-seaborn: #3B82F6;
+  --color-skill-aws: #F59E0B;
+  --color-skill-google-cloud: #3B82F6;
+  --color-skill-azure: #10B981;
+  --color-skill-snowflake: #3B82F6;
+  --color-skill-databricks: #EF4444;
+  --color-skill-docker: #6366F1;
+  --color-skill-git: #334155;
+  --color-skill-jupyter: #F59E0B;
+  --color-skill-vs-code: #3B82F6;
+  --color-skill-linux: #10B981;
+  --color-skill-mongodb: #3B82F6;
+  --color-skill-postgresql: #EF4444;
+
+  /* Typography */
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #E5E5E5;
+  }
+}
+
+@layer base {
+  :root {
+    --background: var(--color-background);
+    --foreground: var(--color-foreground);
+    --card: var(--color-card);
+    --card-foreground: var(--color-card-foreground);
+    --popover: var(--color-popover);
+    --popover-foreground: var(--color-popover-foreground);
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-primary-foreground);
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-secondary-foreground);
+    --muted: var(--color-muted);
+    --muted-foreground: var(--color-muted-foreground);
+    --accent: var(--color-accent);
+    --accent-foreground: var(--color-accent-foreground);
+    --destructive: var(--color-destructive);
+    --destructive-foreground: var(--color-destructive-foreground);
+    --border: var(--color-border);
+    --input: var(--color-input);
+    --ring: var(--color-ring);
+    --chart-1: var(--color-chart-1);
+    --chart-2: var(--color-chart-2);
+    --chart-3: var(--color-chart-3);
+    --chart-4: var(--color-chart-4);
+    --chart-5: var(--color-chart-5);
+    --radius: var(--radius-lg);
+    --sidebar-background: var(--color-sidebar);
+    --sidebar-foreground: var(--color-sidebar-foreground);
+    --sidebar-primary: var(--color-sidebar-primary);
+    --sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+    --sidebar-accent: var(--color-sidebar-accent);
+    --sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+    --sidebar-border: var(--color-sidebar-border);
+    --sidebar-ring: var(--color-sidebar-ring);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    color: var(--color-medium-gray);
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-heading);
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color-heading);
+  }
+
+  h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-heading);
+  }
+
+  a {
+    color: var(--color-primary-blue);
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
