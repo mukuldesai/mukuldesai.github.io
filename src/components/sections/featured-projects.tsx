@@ -305,33 +305,33 @@ const FeaturedProjects = () => {
                       />
                     </div>
                   </div>
-                  <div className="flex space-x-2 overflow-x-auto p-2 scrollbar-hide">
-                        {categories.map((category) => (
-                          <Button
-                            key={category}
-                            onClick={() => setActiveCategory(category)}
-                            variant={activeCategory === category ? "default" : "outline"}
-                            className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200
-                                ${activeCategory === category
-                                    ? 'bg-blue-600 text-white hover:bg-blue-700'
-                                    : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100 hover:border-slate-400'
-                                }
-                            `}
-                          >
-                            {category}
-                          </Button>
-                        ))}
-                  </div>
-                </div>
+                  <div className="flex flex-wrap justify-center gap-2 p-2">
+                         {categories.map((category) => (
+                           <Button
+                             key={category}
+                             onClick={() => setActiveCategory(category)}
+                             variant={activeCategory === category ? "default" : "outline"}
+                             className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors duration-200
+                                 ${activeCategory === category
+                                     ? 'bg-blue-600 text-white hover:bg-blue-700'
+                                     : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-100 hover:border-slate-400'
+                                 }
+                             `}
+                           >
+                             {category}
+                           </Button>
+                         ))}
+                   </div>
+                 </div>
 
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    {filteredProjects.map((project, index) => (
-                        <ProjectCard key={index} project={project} />
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
-};
+                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                     {filteredProjects.map((project, index) => (
+                         <ProjectCard key={index} project={project} />
+                     ))}
+                 </div>
+             </div>
+         </section>
+     );
+ };
 
-export default FeaturedProjects;
+ export default FeaturedProjects;

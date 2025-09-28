@@ -42,12 +42,11 @@ const HeroSection = () => {
               Passionate about transforming data into actionable insights through AI, machine learning, and advanced analytics. I specialize in building end-to-end data solutions that drive business intelligence and innovation.
             </p>
             <div className="relative overflow-hidden rounded-lg border border-sky-100 bg-white shadow-sm">
-              <div className="flex gap-3 p-3 overflow-x-auto no-scrollbar">
-                <span className="shrink-0 inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">End-to-End Data Platforms</span>
-                <span className="shrink-0 inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">AI/ML for Business Impact</span>
-                <span className="shrink-0 inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">Analytics Engineering</span>
-                <span className="shrink-0 inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">Real-time Insights</span>
-                <span className="shrink-0 inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">Decision Intelligence</span>
+              <div className="flex flex-wrap gap-3 p-3">
+                <span className="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">ML for Business Impact</span>
+                <span className="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">Analytics Engineering</span>
+                <span className="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">Real-time Insights</span>
+                <span className="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">Decision Intelligence</span>
               </div>
             </div>
           </div>
