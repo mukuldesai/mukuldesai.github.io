@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Healthcare Outcomes & Insurance Analytics Dashboard",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/38ee6dfa-12ca-4892-8d97-159c22610299-v0-portfolio-page-creation-seven-vercel-app/assets/images/healthcare-dashboard-2.png",
-    status: "Latest",
+    status: "Completed",
     category: "Healthcare Analytics",
     date: "Sep 2025",
     description: "Comprehensive healthcare analytics platform with real-time patient monitoring, predictive analytics, and interactive dashboards for medical professionals.",
@@ -24,7 +24,7 @@ const projects = [
   {
     title: "ZeroDay",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/38ee6dfa-12ca-4892-8d97-159c22610299-v0-portfolio-page-creation-seven-vercel-app/assets/images/zeroday-3.png",
-    status: "Featured",
+    status: "Completed",
     category: "AI Platform",
     date: "Jun 2025 - Jul 2025",
     description: "Agentic AI onboarding assistant made of four collaborating agents for code search, task recommendations, learning guidance, and real-time help.",
@@ -37,7 +37,7 @@ const projects = [
   {
     title: "QuantFlow Financial Suite",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/38ee6dfa-12ca-4892-8d97-159c22610299-v0-portfolio-page-creation-seven-vercel-app/assets/images/quantflow-financial-4.png",
-    status: "Active",
+    status: "Completed",
     category: "Financial Analytics",
     date: "May 2025 - Jun 2025",
     description: "AI-augmented valuation and analytics (DCF, benchmarking, dashboards) from ingestion to investor-ready insights.",
@@ -50,7 +50,7 @@ const projects = [
   {
     title: "InterviewGPT: Generative Preparation Trainer",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/38ee6dfa-12ca-4892-8d97-159c22610299-v0-portfolio-page-creation-seven-vercel-app/assets/images/interviewgpt-5.png",
-    status: "Active",
+    status: "Completed",
     category: "AI Assistant",
     date: "Apr 2025",
     description: "Interview preparation platform with AI simulations, resume insights, and progress tracking.",
@@ -63,7 +63,7 @@ const projects = [
   {
     title: "Real-Time Financial Risk & Fraud Detection with AI & Big Data",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/image-1758985837597.png",
-    status: "Active",
+    status: "Completed",
     category: "Machine Learning",
     date: "Feb 2025 - Mar 2025",
     description: "End-to-end platform with Kafka + Flink pipelines, anomaly detection (PyOD/Sklearn), and real-time risk dashboards.",
@@ -281,7 +281,7 @@ const FeaturedProjects = () => {
 
     return (
         <section id="projects" className="py-20 bg-slate-50">
-            <div className="container mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="mb-16 text-center">
                     <h2 className="text-4xl font-bold text-slate-900">Featured Projects</h2>
                     <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">

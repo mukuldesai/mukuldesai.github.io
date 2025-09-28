@@ -89,7 +89,7 @@ const Navigation = () => {
           
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/Mukul_Desai_Resume-1758758208470.pdf"
+              href="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/Mukul_Desai_Resume-1759092999721.pdf"
               download
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border hover:text-accent-foreground h-9 rounded-md px-3 border-sky-200 text-sky-600 hover:bg-sky-50 bg-transparent"
             >
@@ -131,7 +131,7 @@ const Navigation = () => {
             ))}
             <div className="pt-2">
               <a
-                href="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/Mukul_Desai_Resume-1758758208470.pdf"
+                href="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/Mukul_Desai_Resume-1759092999721.pdf"
                 download
                 className="w-full inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-sky-200 text-sky-600 hover:bg-sky-50 h-9 px-3 rounded-md dark:border-slate-700 dark:text-slate-200"
               >
