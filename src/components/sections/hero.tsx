@@ -46,7 +46,6 @@ const HeroSection = () => {
                 <span className="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">ML for Business Impact</span>
                 <span className="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">Analytics Engineering</span>
                 <span className="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">Real-time Insights</span>
-                <span className="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 border border-sky-200">Decision Intelligence</span>
               </div>
             </div>
           </div>
